@@ -20,4 +20,7 @@ func main() {
 	var price [5]int
 	fmt.Println("Price is :", price)
 	fmt.Printf("Price Array is %q\n", price)
+	fmt.Println("Heloo")
+
+	// update array
 }
