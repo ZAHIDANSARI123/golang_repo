@@ -1,5 +1,4 @@
-package main 
-
+package main
 
 import "fmt"
 
@@ -19,12 +18,12 @@ func main() {
 	fmt.Println("Num has value:", num)
 	fmt.Println("Ptr has value:", ptr)
 
-	var pointer *int  // default value of pointer is nil
+	var pointer *int // default value of pointer is nil
 	if pointer == nil {
 		fmt.Println("Pointer is not assigned to any memory address")
 	}
 
 	value := 20
 	modifyValueByReferenceBy(&value)
-	fmt.Println("Value after modification:", value)
+	fmt.Println("Value after modification:", value)
 }

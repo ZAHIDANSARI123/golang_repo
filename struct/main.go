@@ -2,11 +2,10 @@ package main
 
 import "fmt"
 
-
 type Person struct {
 	FirstName string
 	LastName  string
-	Age  int
+	Age       int
 }
 
 type Contact struct {
@@ -14,7 +13,6 @@ type Contact struct {
 	Address string
 	Phone   string
 }
-
 
 type Address struct {
 	City    string
@@ -24,7 +22,7 @@ type Address struct {
 
 type Employee struct {
 	Person_Details  Person
-Person_Contact Contact
+	Person_Contact  Contact
 	Address_Details Address
 }
 
@@ -32,15 +30,14 @@ func main() {
 	var jahid Person
 	fmt.Println("Jahid person :", jahid)
 	jahid.FirstName = "Jahid"
-	jahid.LastName = "Hossain"	
+	jahid.LastName = "Hossain"
 	jahid.Age = 33
-	fmt.Println("Jahid person : ", jahid)	
-
+	fmt.Println("Jahid person : ", jahid)
 
 	user := Person{
 		FirstName: "John",
 		LastName:  "Doe",
-		Age: 30,
+		Age:       30,
 	}
 	fmt.Println("User person : ", user)
 
@@ -50,22 +47,20 @@ func main() {
 	user2.Age = 28
 	fmt.Println("User2 person : ", user2)
 
-
-
 	var Employee1 Employee
 	Employee1.Person_Details = Person{
 		FirstName: "Jahid",
 		LastName:  "Hossain",
-		Age: 33,
+		Age:       33,
 	}
 	Employee1.Person_Contact.Email = "jahid@gmail.com"
 	Employee1.Person_Contact.Phone = "01700000000"
 
 	Employee1.Address_Details = Address{
 		City:    "Dhaka",
-		Country: "Bangladesh",	
+		Country: "Bangladesh",
 		ZipCode: "1207",
 	}
 
-	fmt.Println("Employee1 : ", Employee1)
+	fmt.Println("Employee1 :", Employee1)
 }
